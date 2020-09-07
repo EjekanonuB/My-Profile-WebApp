@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  background-color: #283593;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.header h1 a {
+  color: white;
+  text-decoration: none;
+}
+
+.nav {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav a {
+  color: #fff;
+  padding-left: 20px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease-out;
+}
+
+.nav a:hover {
+  /* transform: rotate(10deg); */
+  color: #c5cae9;
+  font-size: 2rem;
+}
+
+#section {
+  background-color: #c1c4e0;
+  padding: 20px;
+  margin-top: 0px;
+}
+
+.design {
+  width: 150px;
+  height: 150px;
+  border-radius: 50% 50% 50% 0%;
+  position: absolute;
+  top: 85px;
+  right: -20px;
+  background-color: #ef5350;
+}
+
+.section-container {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 20px 40px;
+  line-height: 1.6rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 40px;
+  background-color: #e6e7ee;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.9);
+  position: relative;
+  animation-name: profile;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes profile {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.section-container-2 {
+  max-width: 500px;
+  margin: 70px auto;
+  padding: 10px 30px;
+  line-height: 1.6rem;
+  background-color: #e6e7ee;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.9);
+  position: relative;
+  opacity: 0;
+  animation-name: profile-2;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes profile-2 {
+  0% {
+    right: -1000px;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.section-container button {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #283593;
+  color: #999;
+  border: none;
+  margin: 10px 0px;
+  box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.9);
+}
+
+.section-container-2 button {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #283593;
+  color: #999;
+  border: none;
+  margin: 10px 0px;
+  box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.9);
+}
+
+.footer {
+  height: 40px;
+  color: #999;
+  text-align: center;
+  padding: 10px;
+  background-color: #e6e7ee;
+}
+
+/* ABOUT PAGE SECTION */
+
+.about-container,
+.contact-container {
+  max-width: 800px;
+  height: 50vh;
+  margin: 70px auto;
+  padding: 10px 30px;
+  line-height: 1.6rem;
+  background-color: #e6e7ee;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.9);
+  position: relative;
+  opacity: 0;
+  animation-name: profile-3;
+  animation-duration: 3s;
+  /* animation-delay: 3s; */
+  animation-fill-mode: forwards;
+}
+
+@keyframes profile-3 {
+  0% {
+    right: -1000px;
+  }
+  100% {
+    right: 0;
+    opacity: 1;
+  }
+}
+
+.about-container button {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #283593;
+  color: #999;
+  border: none;
+  margin: 10px 0px;
+  box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.9);
+}
+
+/* CONTACT PAGE SECTION */
+
+.contact-container {
+  max-width: 800px;
+  height: 50vh;
+  margin: 70px auto;
+  padding: 10px 30px;
+  line-height: 1.6rem;
+  background-color: #e6e7ee;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.9);
+  position: relative;
+  opacity: 0;
+  animation-name: profile-4;
+  animation-duration: 3s;
+  /* animation-delay: 3s; */
+  animation-fill-mode: forwards;
+}
+
+@keyframes profile-4 {
+  0% {
+    left: -1000px;
+  }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+.contact-container button {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #283593;
+  color: #999;
+  border: none;
+  margin: 10px 0px;
+  box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.9);
+}
+
+/* PORTFOLIO PAGE SECTION */
+
+.portfolio-container {
+  max-width: 800px;
+  height: 50vh;
+  margin: 70px auto;
+  padding: 10px 30px;
+  line-height: 1.6rem;
+  background-color: #e6e7ee;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.9);
+  position: relative;
+  opacity: 0;
+  animation-name: profile-5;
+  animation-duration: 3s;
+  /* animation-delay: 3s; */
+  animation-fill-mode: forwards;
+}
+
+@keyframes profile-5 {
+  0% {
+    top: -1000px;
+  }
+  100% {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+.portfolio-container button {
+  display: inline-block;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #283593;
+  color: #999;
+  border: none;
+  margin: 10px 0px;
+  box-shadow: 5px 5px 5px rgba(27, 27, 27, 0.9);
+}
